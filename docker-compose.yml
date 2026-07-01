@@ -1,0 +1,33 @@
+# ===================================================
+# Docker Compose - NexaCorp Corporate Website
+# Version: 3.8
+# ===================================================
+
+version: '3.8'
+
+services:
+  corporate-website:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: nexacorp-corporate-website
+    ports:
+      - "8081:80"
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost/"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+    networks:
+      - nexacorp-network
+    labels:
+      - "com.nexacorp.service=corporate-website"
+      - "com.nexacorp.version=1.0.0"
+      - "com.nexacorp.environment=production"
+
+networks:
+  nexacorp-network:
+    driver: bridge
+    name: nexacorp-network

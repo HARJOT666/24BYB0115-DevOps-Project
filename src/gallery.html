@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore NexaCorp's gallery - photos of our offices, events, team activities, and technology infrastructure.">
+  <title>Gallery - NexaCorp</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==================== Navbar ==================== -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        <div class="logo-icon">N</div>
+        <span>NexaCorp</span>
+      </a>
+      <ul class="navbar-nav" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ==================== Page Banner ==================== -->
+  <section class="page-banner">
+    <h1>Our Gallery</h1>
+    <p>A visual journey through NexaCorp's culture, events, offices, and the technology that powers our solutions.</p>
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span>/</span>
+      <span>Gallery</span>
+    </div>
+  </section>
+
+  <!-- ==================== Gallery Section ==================== -->
+  <section class="section">
+    <div class="container">
+      <!-- Gallery Filter -->
+      <div class="gallery-filter">
+        <button class="active" data-filter="all">All</button>
+        <button data-filter="office">Office</button>
+        <button data-filter="events">Events</button>
+        <button data-filter="team">Team</button>
+        <button data-filter="tech">Technology</button>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="gallery-grid">
+        <!-- Featured Item -->
+        <div class="gallery-item featured fade-in" data-category="office">
+          <img src="images/hero-bg.png" alt="NexaCorp headquarters - modern corporate building">
+          <div class="gallery-overlay">
+            <h3>NexaCorp Headquarters</h3>
+            <p>Our state-of-the-art Silicon Valley campus</p>
+          </div>
+        </div>
+
+        <div class="gallery-item fade-in" data-category="team">
+          <img src="images/about-team.png" alt="Team collaboration session">
+          <div class="gallery-overlay">
+            <h3>Team Collaboration</h3>
+            <p>Innovation through teamwork</p>
+          </div>
+        </div>
+
+        <div class="gallery-item fade-in" data-category="tech">
+          <img src="images/gallery-tech.png" alt="NexaCorp data center server room">
+          <div class="gallery-overlay">
+            <h3>Data Center</h3>
+            <p>Enterprise-grade infrastructure</p>
+          </div>
+        </div>
+
+        <div class="gallery-item fade-in" data-category="events">
+          <img src="images/gallery-event.png" alt="NexaCorp annual technology conference">
+          <div class="gallery-overlay">
+            <h3>Annual Tech Summit</h3>
+            <p>Our flagship technology conference</p>
+          </div>
+        </div>
+
+        <div class="gallery-item fade-in" data-category="office">
+          <img src="images/gallery-office.png" alt="Modern open-plan office workspace">
+          <div class="gallery-overlay">
+            <h3>Open Workspace</h3>
+            <p>Designed for creativity and focus</p>
+          </div>
+        </div>
+
+        <div class="gallery-item fade-in" data-category="team">
+          <img src="images/gallery-teamwork.png" alt="Team brainstorming session">
+          <div class="gallery-overlay">
+            <h3>Brainstorming Session</h3>
+            <p>Where great ideas come to life</p>
+          </div>
+        </div>
+
+        <div class="gallery-item fade-in" data-category="events">
+          <img src="images/gallery-event.png" alt="Client appreciation networking event">
+          <div class="gallery-overlay">
+            <h3>Client Networking</h3>
+            <p>Building lasting partnerships</p>
+          </div>
+        </div>
+
+        <div class="gallery-item fade-in" data-category="tech">
+          <img src="images/gallery-tech.png" alt="Cloud infrastructure monitoring dashboard">
+          <div class="gallery-overlay">
+            <h3>Cloud Operations</h3>
+            <p>24/7 monitoring and management</p>
+          </div>
+        </div>
+
+        <div class="gallery-item fade-in" data-category="office">
+          <img src="images/gallery-teamwork.png" alt="Executive boardroom meeting">
+          <div class="gallery-overlay">
+            <h3>Executive Boardroom</h3>
+            <p>Strategic decisions are made here</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CTA ==================== -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Want to See More?</h2>
+      <p>Visit our offices or join our team to experience the NexaCorp culture firsthand.</p>
+      <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+        <a href="careers.html" class="btn btn-secondary">Join Our Team</a>
+        <a href="contact.html" class="btn btn-outline">Schedule a Visit</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== Footer ==================== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="navbar-brand">
+            <div class="logo-icon">N</div>
+            <span>NexaCorp</span>
+          </a>
+          <p>Empowering enterprises with innovative technology solutions since 2010. Trusted by 500+ companies across 50+ countries.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+            <a href="#" class="social-link" aria-label="Twitter">𝕏</a>
+            <a href="#" class="social-link" aria-label="GitHub">GH</a>
+            <a href="#" class="social-link" aria-label="YouTube">▶</a>
+          </div>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Cloud Solutions</a></li>
+            <li><a href="services.html">Cybersecurity</a></li>
+            <li><a href="services.html">Data Analytics</a></li>
+            <li><a href="services.html">DevOps</a></li>
+            <li><a href="services.html">IT Consulting</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <div class="footer-contact">
+            <p>📍 123 Innovation Drive, Silicon Valley, CA 94025</p>
+            <p>📧 contact@nexacorp.com</p>
+            <p>📞 +1 (555) 123-4567</p>
+            <p>🕐 Mon - Fri: 9:00 AM - 6:00 PM</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 NexaCorp. All Rights Reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
+  <script src="js/main.js"></script>
+</body>
+</html>
